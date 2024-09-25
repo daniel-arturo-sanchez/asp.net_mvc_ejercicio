@@ -5,9 +5,9 @@ namespace Ejercicio_MVC2.Controllers
 {
     public class SaludosController : Controller
     {
-        public string Index(string? localidad)
+        public string Index(string? ID)
         {
-            return $"Hola a {localidad}";
+            return $"Hola a {ID}";
         }
 
         public string Despedida(int ID, string nombre, string edad)
