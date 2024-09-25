@@ -5,14 +5,14 @@ namespace Ejercicio_MVC2.Controllers
 {
     public class SaludosController : Controller
     {
-        public string Index(string? localidad)
+        public IActionResult Index()
         {
-            return $"Hola a {localidad}";
+            return View();
         }
 
-        public string Despedida(int ID, string nombre, string edad)
+        public IActionResult Despedida()
         {
-            return $"El usuario con ID: {ID} y nombre {nombre} se despide a sus {edad} años";
+            return View();
         }
     }
 }
