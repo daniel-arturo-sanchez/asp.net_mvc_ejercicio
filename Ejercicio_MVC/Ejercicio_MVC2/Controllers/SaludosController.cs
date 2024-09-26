@@ -15,5 +15,13 @@ namespace Ejercicio_MVC2.Controllers
         {
             return View();
         }
+
+        public IActionResult Felicita(int ID, string nombre, int edad)
+        {
+            ViewBag.id = ID;
+            ViewBag.nombre = nombre;
+            ViewBag.edad = edad;
+            return View();
+        }
     }
 }
