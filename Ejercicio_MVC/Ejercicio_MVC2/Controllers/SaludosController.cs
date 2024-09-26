@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Ejercicio_MVC2.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 
 namespace Ejercicio_MVC2.Controllers
@@ -22,6 +23,13 @@ namespace Ejercicio_MVC2.Controllers
             ViewBag.nombre = nombre;
             ViewBag.edad = edad;
             return View();
+        }
+
+        public IActionResult Perfil(int ID, string nombre, int edad)
+        {
+            Persona persona = new Persona(ID, nombre, edad, nombre+"@dominio.es");
+
+            return View(persona);
         }
     }
 }
