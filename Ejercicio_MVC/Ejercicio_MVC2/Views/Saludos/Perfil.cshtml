@@ -2,12 +2,12 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    @model Ejercicio_MVC2.Models.Persona;
+    @model Ejercicio_MVC2.Models.Person;
     ViewData["Title"] = "Página Perfil";
 }
 <h1>Usuario: @Html.DisplayFor(model => model.Id)</h1>
 <ul>
     <li>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</li>
-    <li>@Html.DisplayNameFor(model => model.Edad): @Html.DisplayFor(model => model.Edad)</li>
+    <li>@Html.DisplayNameFor(model => model.Age): @Html.DisplayFor(model => model.Age)</li>
     <li>@Html.DisplayNameFor(model => model.Email): @Html.DisplayFor(model => model.Email)</li>
 </ul>

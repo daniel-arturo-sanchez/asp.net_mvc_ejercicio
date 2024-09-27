@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Ejercicio_MVC2.Models
 {
-    public class Persona
+    public class Person
     {
-        public Persona(int Id, string Name, int Edad, string? Email)
+        public Person(int id, string name, int age, string? email)
         {
-            this.Id = Id;
-            this.Name = Name;
-            this.Edad = Edad;
-            this.Email = Email;
+            this.Id = id;
+            this.Name = name;
+            this.Age = age;
+            this.Email = email;
         }
         public int Id { get; set; }
 
@@ -18,7 +18,7 @@ namespace Ejercicio_MVC2.Models
         public string Name { get; set; }
 
         [DisplayName("Edad")]
-        public int Edad { get; set; }
+        public int Age { get; set; }
 
         [EmailAddress]
         public string? Email { get; set; }

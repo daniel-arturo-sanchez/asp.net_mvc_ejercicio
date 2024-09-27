@@ -17,19 +17,19 @@ namespace Ejercicio_MVC2.Controllers
             return View();
         }
 
-        public IActionResult Felicita(int ID, string nombre, int edad)
+        public IActionResult Felicita(int ID, string name, int age)
         {
-            ViewBag.id = ID;
-            ViewBag.nombre = nombre;
-            ViewBag.edad = edad;
+            ViewBag.Id = ID;
+            ViewBag.Name = name;
+            ViewBag.Age = age;
             return View();
         }
 
-        public IActionResult Perfil(int ID, string nombre, int edad)
+        public IActionResult Perfil(int ID, string Name, int Age)
         {
-            Persona persona = new Persona(ID, nombre, edad, nombre+"@dominio.es");
+            Person person = new Person(ID, Name, Age, Name.ToLower()+"dominio.es");
 
-            return View(persona);
+            return View(person);
         }
     }
 }
